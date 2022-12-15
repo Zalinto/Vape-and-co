@@ -5,13 +5,29 @@
     padding: 15px;
 }
 
-ul li {
+/* ul li {
     margin: auto;
-} 
+}  */
 
-ul.horizontal-unstyled-clearfix a {
+ul.horizontal-unstyled-clearfix {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.horizontal-unstyled-clearfix li {
+    display: inline-block;
+    margin: 0 8px;
+  }
+  
+  ul.horizontal-unstyled-clearfix a {
     display: block;
     padding: 8px;
     text-decoration: none;
     color: red;
+  }
+  
+  ul.horizontal-unstyled-clearfix a:hover {
+    color: red;
+    background-color: #000;
   }
