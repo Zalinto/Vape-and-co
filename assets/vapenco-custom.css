@@ -5,27 +5,13 @@
     padding: 15px;
 }
 
-.test{
-    text-align:center;
-}
-
-.test1{
-    text-align:right;
-    color:black;
-    font-size: 14px;
-}
-
-.mainy {
-    padding: 30px 30px 30px 30px;
-    font-size: 140px;
-}
-
-.horizontal-unstyled-clearfix{
-    color:blue;
-    /* word-spacing: 30px; */
-}
-
 ul li {
     margin: auto;
-    color: red;
 } 
+
+ul.horizontal-unstyled-clearfix a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: red;
+  }
