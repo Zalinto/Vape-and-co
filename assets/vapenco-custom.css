@@ -5,19 +5,15 @@
     padding: 15px;
 }
 
-ul li {
-    margin: auto;
-}  
-
 ul.horizontal-unstyled-clearfix {
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
   }
   
   ul.horizontal-unstyled-clearfix li {
     display: inline-block;
-    margin: 0 8px;
+    margin: auto;
   }
   
   ul.horizontal-unstyled-clearfix a {
