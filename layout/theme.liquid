@@ -152,7 +152,20 @@
                         value="{{ search.terms }}" />
                     </form>
                   </li>
-
+                  <li id="cart-target" class="toolbar-cart ">
+                    <span class="icon-cart"></span>
+                    <a
+                      href="/cart"
+                      class="cart"
+                      title="Shopping Cart">Cart:
+                      <span id="cart-count">{{ cart.item_count }}</span>
+                    </a>
+                  </li>
+                  {% if cart.item_count != 0 %}
+                    <li id="checkout-link">
+                      <a href="/cart" title="Checkout">Check out</a>
+                    </li>
+                  {% endif %}
 
                 </ul>
               </h1>
