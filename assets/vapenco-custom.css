@@ -31,3 +31,7 @@ ul.horizontal-unstyled-clearfix {
     color: red;
     background-color: #000;
   }
+
+  #nav nav a {
+    color: red;
+  }
