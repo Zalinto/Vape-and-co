@@ -289,7 +289,7 @@ ul.expanded > li, ol.expanded > li { margin-bottom: 10px; }
 /* 3.2 - Header */
 
 .logo { max-width: 966px; }
-.logo a img, .logo h1 a { display: block; margin: 0 auto; }
+.logo a img, .logo h1 a { margin: 0 auto; }
 .logo a img, .logo h1 a:hover{opacity:1; filter: alpha(opacity = 100); }
 .logo h1 { text-align: center; }
 
@@ -298,7 +298,7 @@ ul.expanded > li, ol.expanded > li { margin-bottom: 10px; }
 .logo h1 { margin:0; border:0; }
 .logo h1 a { text-decoration:none; font-size:72px; line-height:72px; color:#333333;  margin:0; padding:0; border:0; }
 .logo h1 a:hover { text-decoration:none; color:#333333; }
-.logo a, .logo img { display:block; margin:0; }
+.logo a, .logo img { margin:0; }
 
 /* 3.3 - Navigation */
 nav { font-family:Helvetica, Arial, sans-serif; }
