@@ -24,14 +24,16 @@ ul.horizontal-unstyled-clearfix {
     display: block;
     padding: 8px;
     text-decoration: none;
-    color: red;
+    color: black;
+    font-weight: bold;
   }
   
   ul.horizontal-unstyled-clearfix a:hover {
-    color: red;
-    background-color: #000;
+    color: black;
+    font-weight: bold;
   }
 
   #nav nav a {
-    color: red;
+    color: black;
+    font-weight: bold;
   }
