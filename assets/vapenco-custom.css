@@ -8,7 +8,6 @@
 ul.horizontal-unstyled-clearfix {
     list-style-type: none;
     margin: 0px 40px;
-    padding: 0;
   }
   
   ul.horizontal-unstyled-clearfix li {
@@ -18,9 +17,8 @@ ul.horizontal-unstyled-clearfix {
   
   ul.horizontal-unstyled-clearfix a {
     display: block;
-    padding: 8px;
     text-decoration: none;
-    color: red;
+    color: black;
     font-weight: bold;
   }
   
