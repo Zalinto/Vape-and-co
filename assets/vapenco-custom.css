@@ -19,12 +19,16 @@
     padding: 30px 30px 30px 30px;
     color:red;
     font-size: 140px;
+    letter-spacing: 30px;
+
 }
 
 .horizontal-unstyled-clearfix{
     color:blue;
+    letter-spacing: 30px;
+
 }
 
 .nav > ul{
-    padding: 40px;
+    letter-spacing: 30px;
 }
