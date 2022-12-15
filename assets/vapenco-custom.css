@@ -25,3 +25,8 @@
     color:blue;
     word-spacing: 30px;
 }
+
+.a { 
+    display: block;
+    padding: 10px 30px;
+}
