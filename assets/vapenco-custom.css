@@ -17,7 +17,6 @@
 
 .mainy {
     padding: 30px 30px 30px 30px;
-    color:red;
     font-size: 140px;
 }
 
@@ -27,6 +26,6 @@
 }
 
 ul li {
-    margin: 0 30px;
+    margin: 0 70px;
     color: red;
 }
