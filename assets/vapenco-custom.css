@@ -15,8 +15,12 @@
     font-size: 14px;
 }
 
-.span12.nav.main {
+.span12 {
     padding: 30px 30px 30px 30px;
-    color:red;
+    color:blue;
     font-size: 30px;
+}
+
+.dropdown {
+    color: red;
 }
