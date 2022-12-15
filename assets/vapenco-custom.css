@@ -24,3 +24,7 @@
 .horizontal-unstyled-clearfix{
     color:blue;
 }
+
+.nav > ul{
+    padding: 40px;
+}
