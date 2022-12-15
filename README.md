@@ -1,8 +1,9 @@
 # Vape-and-co
-This is an in progress commission website from Vape and Co
+This is a commission website from Vape and Co
 
 Importance
     1) Get all Products in
+        Disposables finished just need pictures
     2) Check Spotify to create our own app to download
     3) Age verification to enter site 21+
         Check lavaporwholesale for their layout
