@@ -5,9 +5,9 @@
     padding: 15px;
 }
 
-/* ul li {
+ul li {
     margin: auto;
-}  */
+}  
 
 ul.horizontal-unstyled-clearfix {
     list-style-type: none;
@@ -36,8 +36,4 @@ ul.horizontal-unstyled-clearfix {
   #nav nav a {
     color: black;
     font-weight: bold;
-  }
-
-  #nav nav li {
-    margin: 0 8px;
   }
