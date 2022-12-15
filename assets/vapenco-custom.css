@@ -25,10 +25,5 @@
 
 .horizontal-unstyled-clearfix{
     color:blue;
-    letter-spacing: 30px;
-
-}
-
-.nav > ul{
-    letter-spacing: 30px;
+    word-spacing: 30px;
 }
