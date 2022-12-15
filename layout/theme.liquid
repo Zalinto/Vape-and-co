@@ -135,7 +135,40 @@
             {% if settings.use_logo %}
               <h1>
                 <a class="test" href="/"><img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" /></a>
-                <a class="test1">logos here now</a>
+                <ul class="unstyled">
+
+                  <li class="search-field fl">
+                    <form class="search" action="/search">
+                      <input
+                        type="image"
+                        src="{{ 'icon-search.png' | asset_url }}"
+                        alt="Go"
+                        id="go">
+                      <input
+                        type="text"
+                        name="q"
+                        class="search_box"
+                        placeholder="Search"
+                        value="{{ search.terms }}" />
+                    </form>
+                  </li>
+                  <li id="cart-target" class="toolbar-cart ">
+                    <span class="icon-cart"></span>
+                    <a
+                      href="/cart"
+                      class="cart"
+                      title="Shopping Cart">Cart:
+                      <span id="cart-count">{{ cart.item_count }}</span>
+                    </a>
+                  </li>
+                  {% if cart.item_count != 0 %}
+                    <li id="checkout-link">
+                      <a href="/cart" title="Checkout">Check out</a>
+                    </li>
+                  {% endif %}
+
+                  {% include 'customer_links' %}
+                </ul>
               </h1>
               {% if template == 'index' %}
                 <h1 style="display:none">
@@ -403,14 +436,14 @@
           });
 
 // Add label if only one product option and it isn't 'Title'.
-          {% if product.options.size == 1 and product.options.first != 'Title' %}$('.selector-wrapper:eq(0)').prepend('<label>                         {{ product.options.first }} </label>');{% endif %}
+          {% if product.options.size == 1 and product.options.first != 'Title' %}$('.selector-wrapper:eq(0)').prepend('<label>                           {{ product.options.first }} </label>');{% endif %}
 
 // Auto-select first available variant on page load.
           {% assign found_one_in_stock = false %}
           {% for variant in product.variants %}
             {% if variant.available and found_one_in_stock == false %}
               {% assign found_one_in_stock = true %}
-              {% for option in product.options %}$('.single-option-selector:eq(                         {{ forloop.index0 }} )').val({{ variant.options[forloop.index0] | json }}).trigger('change');{% endfor %}{% endif %}{% endfor %}
+              {% for option in product.options %}$('.single-option-selector:eq(                           {{ forloop.index0 }} )').val({{ variant.options[forloop.index0] | json }}).trigger('change');{% endfor %}{% endif %}{% endfor %}
 
         });
       </script>
