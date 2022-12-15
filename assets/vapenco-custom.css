@@ -17,10 +17,6 @@
 
 .mainy {
     padding: 30px 30px 30px 30px;
-    color:black;
+    color:red;
     font-size: 140px;
-}
-
-.dropdown {
-    color: red;
 }
