@@ -7,13 +7,13 @@
 
 ul.horizontal-unstyled-clearfix {
     list-style-type: none;
-    margin: auto;
+    margin: 0px 40px;
     padding: 0;
   }
   
   ul.horizontal-unstyled-clearfix li {
     display: inline-block;
-    margin: auto;
+    margin: 0px 40px;
   }
   
   ul.horizontal-unstyled-clearfix a {
