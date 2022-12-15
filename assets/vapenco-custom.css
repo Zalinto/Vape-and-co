@@ -37,3 +37,7 @@ ul.horizontal-unstyled-clearfix {
     color: black;
     font-weight: bold;
   }
+
+  #nav nav li {
+    margin: 0 8px;
+  }
