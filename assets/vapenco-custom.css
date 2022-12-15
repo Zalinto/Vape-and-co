@@ -8,8 +8,13 @@
 .test{
     text-align:center;
 }
+
 .test1{
     text-align:right;
     color:black;
     font-size: 14px;
+}
+
+.horizontal unstyled clearfix{
+    padding: 30px 30px 30px 30px;
 }
