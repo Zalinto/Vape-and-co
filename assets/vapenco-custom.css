@@ -24,5 +24,8 @@
 .horizontal-unstyled-clearfix{
     color:blue;
     /* word-spacing: 30px; */
-    margin: 0px 50px;
+}
+
+ul li {
+    margin: 0 8px;
 }
