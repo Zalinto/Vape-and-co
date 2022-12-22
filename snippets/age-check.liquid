@@ -3,11 +3,12 @@
 {% assign age = 18 %}
 
 {% capture adult_header %}
-Adults only (18+)
+Age Verification
 {% endcapture %}
 
 {% capture adult_text %}
-This website contains adult material and is only suitable for those 18 years or older. Click Enter only if you are at least 18 years of age.
+  <center>Products available on this website are <strong>age-restricted and intended for adults of legal smoking age only.</strong>  All orders placed on the website will be verified by an industry leading Age Verification software for validation. <br></br>By entering our website, you aggree that you are of legal smoking age in your jurisdiction and you agree to be Age Verified.
+</center>
 {% endcapture %}
 
 <div id="prompt-background">
@@ -182,9 +183,9 @@ This website contains adult material and is only suitable for those 18 years or 
       </select>
       <div style="clear:both; margin-bottom:15px"></div>
     </div>
-    <button id="submit_birthdate" class="button-enter btn styled-submit" onclick="ageCheck()" style="display:inline-block">Enter</button> 
+    <button id="submit_birthdate" class="button-enter btn styled-submit" onclick="ageCheck()" style="display:inline-block">Yes, I AM OF LEGAL AGE </button> 
     <span style="padding: 0 4px">or</span>
-    <a href="http://google.com/" id="button-exit" name="button-exit">Exit</a>
+    <a href="http://google.com/" id="button-exit" name="button-exit">I DON'T AGREE</a>
   </div>
 </div>
 
