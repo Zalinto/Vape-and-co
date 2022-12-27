@@ -146,7 +146,15 @@
                 <a href="/">{{ shop.name }}</a>
               </h1>
             {% endif %}
-
+            <div style="display: inline-block;">
+              <a>test</a>
+              <a>test2</a>
+              <!--
+              <img src="icon-1-source.jpg" alt="Icon 1" style="height: 50px; width: 50px;">
+              <img src="icon-2-source.jpg" alt="Icon 2" style="height: 50px; width: 50px;">
+              <img src="icon-3-source.jpg" alt="Icon 3" style="height: 50px; width: 50px;">
+              -->
+            </div>
           </div>
         </div>
         <section id="nav" class="row p30">
@@ -402,14 +410,14 @@
           });
 
 // Add label if only one product option and it isn't 'Title'.
-          {% if product.options.size == 1 and product.options.first != 'Title' %}$('.selector-wrapper:eq(0)').prepend('<label>                                    {{ product.options.first }} </label>');{% endif %}
+          {% if product.options.size == 1 and product.options.first != 'Title' %}$('.selector-wrapper:eq(0)').prepend('<label>                                     {{ product.options.first }} </label>');{% endif %}
 
 // Auto-select first available variant on page load.
           {% assign found_one_in_stock = false %}
           {% for variant in product.variants %}
             {% if variant.available and found_one_in_stock == false %}
               {% assign found_one_in_stock = true %}
-              {% for option in product.options %}$('.single-option-selector:eq(                                    {{ forloop.index0 }} )').val({{ variant.options[forloop.index0] | json }}).trigger('change');{% endfor %}{% endif %}{% endfor %}
+              {% for option in product.options %}$('.single-option-selector:eq(                                     {{ forloop.index0 }} )').val({{ variant.options[forloop.index0] | json }}).trigger('change');{% endfor %}{% endif %}{% endfor %}
 
         });
       </script>
