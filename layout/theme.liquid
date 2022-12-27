@@ -133,15 +133,12 @@
 
           <div style="display: flex; justify-content: center; align-items: center;" class="logo">
             {% if settings.use_logo %}
-              <h1 style="text-align: center;">
-                <a
-                  style="text-align: center;"
-                  class="test"
-                  href="/"><img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" /></a>
+              <h1>
+                <a class="test" href="/"><img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" /></a>
               </h1>
               {% if template == 'index' %}
-                <h1 style="text-align: center;">
-                  <a style="text-align: center;" href="/">{{ shop.name }}</a>
+                <h1 style="display:none">
+                  <a href="/">{{ shop.name }}</a>
                 </h1>
               {% endif %}
             {% else %}
@@ -418,14 +415,14 @@
           });
 
 // Add label if only one product option and it isn't 'Title'.
-          {% if product.options.size == 1 and product.options.first != 'Title' %}$('.selector-wrapper:eq(0)').prepend('<label>                                              {{ product.options.first }} </label>');{% endif %}
+          {% if product.options.size == 1 and product.options.first != 'Title' %}$('.selector-wrapper:eq(0)').prepend('<label>                                           {{ product.options.first }} </label>');{% endif %}
 
 // Auto-select first available variant on page load.
           {% assign found_one_in_stock = false %}
           {% for variant in product.variants %}
             {% if variant.available and found_one_in_stock == false %}
               {% assign found_one_in_stock = true %}
-              {% for option in product.options %}$('.single-option-selector:eq(                                              {{ forloop.index0 }} )').val({{ variant.options[forloop.index0] | json }}).trigger('change');{% endfor %}{% endif %}{% endfor %}
+              {% for option in product.options %}$('.single-option-selector:eq(                                           {{ forloop.index0 }} )').val({{ variant.options[forloop.index0] | json }}).trigger('change');{% endfor %}{% endif %}{% endfor %}
 
         });
       </script>
