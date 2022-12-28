@@ -130,37 +130,31 @@
 
         <!-- Begin below navigation -->
         <div class="span12 clearfix">
-
-          <div style="display: flex; justify-content: center; align-items: center;" class="logo">
-            {% if settings.use_logo %}
-              <h1>
-                <a class="test" href="/"><img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" /></a>
-              </h1>
-              {% if template == 'index' %}
-                <h1 style="display:none">
+          <div class="container">
+            <div class="logo">
+              {% if settings.use_logo %}
+                <h1>
+                  <a class="test" href="/"><img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" /></a>
+                </h1>
+                {% if template == 'index' %}
+                  <h1 style="display:none">
+                    <a href="/">{{ shop.name }}</a>
+                  </h1>
+                {% endif %}
+              {% else %}
+                <h1>
                   <a href="/">{{ shop.name }}</a>
                 </h1>
               {% endif %}
-            {% else %}
-              <h1>
-                <a href="/">{{ shop.name }}</a>
-              </h1>
-            {% endif %}
-            <div style="display: flex; align-items: center; justify-content: flex-end;">
-              <img
-                src="icon-cart-small.png"
-                alt="Icon 1"
-                style="height: 35px; width: 35px;">
-              <img
-                src="icon-cart-small.png"
-                alt="Icon 2"
-                style="height: 35px; width: 35px;">
-              <img
-                src="icon-cart-small.png"
-                alt="Icon 3"
-                style="height: 35px; width: 35px;">
+            </div>
+            <div class="icons">
+              <img src="icon-cart-small.png" alt="Icon 1" style="height: 35px; width: 35px;">
+              <img src="icon-cart-small.png" alt="Icon 2" style="height: 35px; width: 35px;">
+              <img src="icon-cart-small.png" alt="Icon 3" style="height: 35px; width: 35px;">
             </div>
           </div>
+        </div>
+
         </div>
         <section id="nav" class="row p30">
           <div class="span12">

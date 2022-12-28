@@ -33,3 +33,20 @@ ul.horizontal-unstyled-clearfix {
     color: black;
     font-weight: bold;
   }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
