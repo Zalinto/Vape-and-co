@@ -773,8 +773,6 @@ hr.divider {
   ;
 }
 
-
-
 #transparency > .row:before,
 #transparency > .row:after {
   content: "";
@@ -1137,7 +1135,9 @@ nav.mobile select {
 /* 3.4 - Footer */
 .footer-wrapper {
   width: 100%;
-  background: none;
+  height: 60px;
+  background: {{ settings.toolbar_bg_color }}
+  ;
 }
 .footer-wrapper {}
 

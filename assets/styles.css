@@ -221,8 +221,6 @@ hr.divider { margin: 15px 0; background: #dddddd; height: 1px; border: 0; }
 .wrapper { width: 996px; margin: 0 auto; padding: 0 15px; }
 .toolbar-wrapper { width: 100%; height: 60px; background:  #000000;}
 
-
-
 #transparency > .row:before, #transparency > .row:after  { content: ""; display: table; }
 #transparency > .row:after { clear: both; }
 #transparency > .row { zoom: 1; }
@@ -332,7 +330,7 @@ nav.mobile > ul > li > a { line-height: 30px; height: 30px; }
 nav.mobile select { height: 30px; line-height: 30px; width: 100%; }
 
 /* 3.4 - Footer */
-.footer-wrapper { width: 100%; background: none;  }
+.footer-wrapper { width: 100%; height: 60px; background: #000000;}
 .footer-wrapper {  }
 
 footer { padding: 0; }
