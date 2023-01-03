@@ -4,3 +4,83 @@
     font-weight: bold;
     padding: 15px;
 }
+
+ul.horizontal-unstyled-clearfix {
+    list-style-type: none;
+    margin: 0px 40px;
+    padding: 0;
+  }
+  
+  ul.horizontal-unstyled-clearfix li {
+    display: inline-block;
+    margin: 0px 40px;
+  }
+  
+  ul.horizontal-unstyled-clearfix a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  ul.horizontal-unstyled-clearfix a:hover {
+    color: black;
+    font-weight: bold;
+  }
+
+  #nav nav a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 162px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Style the search icon */
+.search-icon {
+  width: 30px;
+  height: 30px;
+  background: url(icons8-search-35.png) no-repeat center center;
+  cursor: pointer;
+} 
+
+/* Style the search bar */
+.search-bar {
+  display: none;
+  height: 40px;
+}
+
+/* Style the search input field */
+.search-input {
+  width: 75%;
+  height: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+/* Style the close button */
+.close-btn {
+  width: 25%;
+  height: 100%;
+  background-color: #f44336;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
