@@ -38,6 +38,7 @@ ul.horizontal-unstyled-clearfix {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 162px;
   }
   
   .logo {
