@@ -53,6 +53,8 @@ ul.horizontal-unstyled-clearfix {
   
   /* Style the search icon */
 .search-icon {
+  width: 30px;
+  height: 30px;
   background: url(icons8-search-35.png) no-repeat center center;
   cursor: pointer;
 }
