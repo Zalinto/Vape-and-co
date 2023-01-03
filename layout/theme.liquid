@@ -112,39 +112,7 @@
                   </h1>
                 {% endif %}
               </div>
-              <!-- IMAGES -->
-              {% comment %} <div class="icons">
-                <!-- SEARCH ICON IMAGE -->
-                <div class="search-icon" 
-                  onclick="toggleSearch()">
-                </div>
-                <div class="search-bar">
-                  <form class="search" action="/search">
-                    <input
-                      type="text"
-                      name="q"
-                      class="search_box"
-                      placeholder="Search..."
-                      value="{{ search.terms }}">
-                  </form>
-                </div>
-                <script>
-                  function toggleSearch() {
-                    var searchBar = document.querySelector(".search-bar");
-                    if (searchBar.style.display === "block") {
-                      searchBar.style.display = "none";
-                    } else {
-                      searchBar.style.display = "block";
-                    }
-                  }
-                </script>
-                <!-- CUSTOMER ICON IMAGE -->
-                <img src={{ 'icons8-customer-35.png' | asset_url }} alt="Icon 2">
-                <!-- CART ICON IMAGE -->
-                <a href="/cart">
-                  <img src={{ 'icons8-shopping-cart-35.png' | asset_url }} alt="Icon 3">
-                </a>
-              </div> {% endcomment %}
+
             </div>
           </div>
 
