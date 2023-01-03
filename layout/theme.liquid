@@ -114,11 +114,10 @@
               </div>
               <!-- IMAGES -->
               <div class="icons">
-
-
-
-                <!--<img src="{{ 'icons8-search-35.png' | asset_url }}" alt="Icon 1"> -->
-                <div class="search-icon" onclick="toggleSearch()"></div>
+                <!-- SEARCH ICON IMAGE -->
+                <div class="search-icon" 
+                  onclick="toggleSearch()">
+                </div>
                 <div class="search-bar">
                   <form class="search" action="/search">
                     <input
@@ -129,10 +128,7 @@
                       value="{{ search.terms }}">
                   </form>
                 </div>
-
-                <!-- Include the toggleSearch script -->
                 <script>
-                  // Toggle the search bar visibility
                   function toggleSearch() {
                     var searchBar = document.querySelector(".search-bar");
                     if (searchBar.style.display === "block") {
@@ -142,10 +138,9 @@
                     }
                   }
                 </script>
-
-
-
+                <!-- CUSTOMER ICON IMAGE -->
                 <img src={{ 'icons8-customer-35.png' | asset_url }} alt="Icon 2">
+                <!-- CART ICON IMAGE -->
                 <a href="/cart">
                   <img src={{ 'icons8-shopping-cart-35.png' | asset_url }} alt="Icon 3">
                 </a>
