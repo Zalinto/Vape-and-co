@@ -178,6 +178,7 @@
             </div>
             <!-- /.row -->
             <div class="row products masonry">
+              <strong style = "color: black;"> TESTING</strong>
               {% for collection in collections %}
                 {% unless collection.all_products_count == 0 or collection.handle == "frontpage" %}
                   {% include 'collection-loop' %}
