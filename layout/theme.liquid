@@ -168,22 +168,15 @@
         <!-- Begin content-->
         <section id="content" class="clearfix">
           {% if template == "list-collections" %}
-          <strong>TESTING 4</strong>  
           <div id="collection" class="row">
               <div class="span12">
                 <h1>
                   <span>Product Collections</span>
                 </h1>
-                <strong>TESTING 2</strong>
               </div>
-              <strong>TESTING 3</strong>
               <!-- /.span12 -->
             </div>
-          <div id="click images">
-            <strong>TESTING 111</strong>
-          </div>
             <!-- /.row -->
-            <strong>TESTING 1</strong>
             <div class="row products masonry">
               {% for collection in collections %}
                 {% unless collection.all_products_count == 0 or collection.handle == "frontpage" %}
