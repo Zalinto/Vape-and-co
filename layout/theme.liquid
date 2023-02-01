@@ -177,8 +177,17 @@
               <!-- /.span12 -->
             </div>
             <!-- /.row -->
+            <div class="row images">
+            {% for collection in collections %}
+              {% unless collection.all_products_count == 0 or collection.handle == "frontpage" %}
+                {% comment %} <div class="span3">
+                  <img src="image_url" alt="image_description">
+                </div> {% endcomment %}
+                <strong style ="color: black">TESTING</strong>
+              {% endunless %}
+            {% endfor %}
+          </div>
             <div class="row products masonry">
-              <strong style = "color: black;"> TESTING</strong>
               {% for collection in collections %}
                 {% unless collection.all_products_count == 0 or collection.handle == "frontpage" %}
                   {% include 'collection-loop' %}
